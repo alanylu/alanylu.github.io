@@ -4,5 +4,5 @@ alert(page);
 //Don't have to create var can just use alert("Page is still....")
 
 function myFunction() {
-  alert("Coming soon. Please send message to alanylu@live.unc.edu")
+  alert("Coming soon. Please send message to alanylu@live.unc.edu");
 }
