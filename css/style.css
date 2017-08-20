@@ -292,6 +292,7 @@ p {
 
 .clients img {
   width: 200px;
+  height: 200px;
   opacity: 0.6;
   cursor: pointer;
   margin: 40px 0;

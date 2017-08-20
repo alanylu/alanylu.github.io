@@ -189,7 +189,7 @@
         <a href="https://www.facebook.com/alan.lu.7503" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
         <a href="https://twitter.com/alanllluu" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
         <a href="https://www.linkedin.com/in/alan-lu-a2778996" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-        <a href="https://www.instagram.com/alan48085/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://github.com/alanylu" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
       </div>
       <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.6s">
         <img src="images/ceo.jpg" class="img-circle" alt="">
@@ -257,29 +257,34 @@
     <div class="row">
       <h2 class="wow fadeInUp">Contact Me</h2>
       <p class="wow fadeInUp" data-wow-delay="0.4s">Feel free to send me a message with your contact Info.</p>
-      <div class="col-lg-6 col-md-6">
-        <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.8s">
-          <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
-          <input type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Full Name">
+      <form id="contact-form" action="https://formspree.io/alanylu@live.unc.edu"
+      method="POST">
+        <div class="col-lg-6 col-md-6">
+          <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.8s">
+            <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+            <input id="inputName" type="text" name="name" class="form-control" aria-describedby="sizing-addon1" placeholder="Full Name">
+          </div>
+          <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.2s">
+            <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+            <input id="inputEmail" type="text" name="email" class="form-control" aria-describedby="sizing-addon1" placeholder="Email Address">
+          </div>
+          <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.6s">
+            <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-phone" aria-hidden="true"></i></span>
+            <input id="inputPhone" type="text"  name="phone" class="form-control" aria-describedby="sizing-addon1" placeholder="Phone Number">
+          </div>
         </div>
-        <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.2s">
-          <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-          <input type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Email Address">
+        <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="2s">
+          <div class="input-group">
+            <textarea name="message" id="inputMessage" rows="6" cols="80" class="form-control"></textarea>
+          </div>
+          <button onclick="myFunction()" class="btn btn-lg wow fadeInUp" data-wow-delay="2.4s">Submit your Message</button>
         </div>
-        <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.6s">
-          <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-phone" aria-hidden="true"></i></span>
-          <input type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Phone Number">
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="2s">
-        <div class="input-group">
-          <textarea name="" id="" rows="6" cols="80" class="form-control"></textarea>
-        </div>
-        <button class="btn btn-lg wow fadeInUp" data-wow-delay="2.4s">Submit your Message. Coming soon. Learning Node JS</button>
-      </div>
+      </form>
+
     </div>
   </div>
 </div>
+
 <!--END FORM-->
 
 <!--FOOTER-->
@@ -314,10 +319,13 @@
 </div>
 <!--FOOTER END-->
 
+    <!--JS-->
+    <script src="js/main.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/wow.min.js"></script>
+    
     <script>
     new WOW().init();
     </script>
